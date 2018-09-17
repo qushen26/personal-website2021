@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on A Statistic Note</title>
-    <link>https://github.com/UrbanStudy/studynotes/categories/</link>
+    <link>/UrbanStudy/studynotes/categories/</link>
     <description>Recent content in Categories on A Statistic Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://github.com/UrbanStudy/studynotes/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/UrbanStudy/studynotes/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Example</title>
-      <link>https://github.com/UrbanStudy/studynotes/categories/example/</link>
+      <link>/UrbanStudy/studynotes/categories/example/</link>
       <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/UrbanStudy/studynotes/categories/example/</guid>
+      <guid>/UrbanStudy/studynotes/categories/example/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://github.com/UrbanStudy/studynotes/categories/hugo/</link>
+      <link>/UrbanStudy/studynotes/categories/hugo/</link>
       <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/UrbanStudy/studynotes/categories/hugo/</guid>
+      <guid>/UrbanStudy/studynotes/categories/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://github.com/UrbanStudy/studynotes/categories/r/</link>
+      <link>/UrbanStudy/studynotes/categories/r/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>https://github.com/UrbanStudy/studynotes/categories/r/</guid>
+      <guid>/UrbanStudy/studynotes/categories/r/</guid>
       <description></description>
     </item>
     
