@@ -4,9 +4,9 @@ title: Home
 
 [<img src="https://avatars1.githubusercontent.com/u/42284875?s=400&u=270c929468e7be302259d5d658f7ee3fe0c45d53&v=4" style="max-width:15%;min-width:40px;float:right;" alt="Github repo" />](https://github.com/UrbanStudy/)
 
-# A Statistic Study Note
+## A Statistic Study Note
 
-## _A statistic (singular) or sample statistic is a single measure of some attribute of a sample (e.g. its arithmetic mean value). It is calculated by applying a function (statistical algorithm) to the values of the items of the sample, which are known together as a set of data._
+### _A statistic (singular) or sample statistic is a single measure of some attribute of a sample (e.g. its arithmetic mean value). It is calculated by applying a function (statistical algorithm) to the values of the items of the sample, which are known together as a set of data._
 
 **XMin** is a Hugo theme written by [Yihui Xie](https://yihui.name) in about four hours: half an hour was spent on the Hugo templates, and 3.5 hours were spent on styling. The main motivation for writing this theme was to provide a really minimal example to beginners of Hugo templates. This XMin theme contains about 130 lines of code in total, including the code in HTML templates and CSS (also counting empty lines).
 
