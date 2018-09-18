@@ -1,15 +1,11 @@
----
-title: Old Faithful
-date: '2018-09-17'
-categories:
-  - Example
-tags:
-  - Markdown
----
-
-**interactive visualization** . 
-_UI_ This is a Shiny web application.
-```{r, echo=T}
+#
+# This is a Shiny web application. You can run the application by clicking
+# the 'Run App' button above.
+#
+# Find out more about building applications with Shiny here:
+#
+#    http://shiny.rstudio.com/
+#
 
 library(shiny)
 
@@ -51,7 +47,4 @@ server <- function(input, output) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)
-```
-
-> Find out more about building applications with [Shiny](http://shiny.rstudio.com/).
 

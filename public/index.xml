@@ -17,8 +17,8 @@
       <pubDate>Mon, 17 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/2018/09/17/old-faithful/</guid>
-      <description>interactive visualization . UI This is the user-interface definition of a Shiny web application.
-library(shiny) # Define UI for application that draws a histogram shinyUI(fluidPage( # Application title titlePanel(&amp;quot;Old Faithful Geyser Data&amp;quot;), # Sidebar with a slider input for number of bins sidebarLayout( sidebarPanel( sliderInput(&amp;quot;bins&amp;quot;, &amp;quot;Number of bins:&amp;quot;, min = 1, max = 50, value = 30) ), # Show a plot of the generated distribution mainPanel( plotOutput(&amp;quot;distPlot&amp;quot;) ) ) ))  Server This is the server logic of a Shiny web application.</description>
+      <description>interactive visualization . UI This is a Shiny web application.
+library(shiny) # Define UI for application that draws a histogram ui &amp;lt;- fluidPage( # Application title titlePanel(&amp;quot;Old Faithful Geyser Data&amp;quot;), # Sidebar with a slider input for number of bins sidebarLayout( sidebarPanel( sliderInput(&amp;quot;bins&amp;quot;, &amp;quot;Number of bins:&amp;quot;, min = 1, max = 50, value = 30) ), # Show a plot of the generated distribution mainPanel( plotOutput(&amp;quot;distPlot&amp;quot;) ) ) ) # Define server logic required to draw a histogram server &amp;lt;- function(input, output) { output$distPlot &amp;lt;- renderPlot({ # generate bins based on input$bins from ui.</description>
     </item>
     
     <item>

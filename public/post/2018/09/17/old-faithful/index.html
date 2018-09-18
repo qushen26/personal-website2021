@@ -37,53 +37,49 @@
 
 <main>
 <p><strong>interactive visualization</strong> .
-<em>UI</em> This is the user-interface definition of a Shiny web application.</p>
+<em>UI</em> This is a Shiny web application.</p>
 
-<pre><code class="language-r,">library(shiny)
+<pre><code class="language-r,">
+library(shiny)
 
 # Define UI for application that draws a histogram
-shinyUI(fluidPage(
-  
-  # Application title
-  titlePanel(&quot;Old Faithful Geyser Data&quot;),
-  
-  # Sidebar with a slider input for number of bins 
-  sidebarLayout(
-    sidebarPanel(
-       sliderInput(&quot;bins&quot;,
-                   &quot;Number of bins:&quot;,
-                   min = 1,
-                   max = 50,
-                   value = 30)
-    ),
-    
-    # Show a plot of the generated distribution
-    mainPanel(
-       plotOutput(&quot;distPlot&quot;)
-    )
-  )
-))
-</code></pre>
-
-<p><em>Server</em> This is the server logic of a Shiny web application.</p>
-
-<pre><code class="language-r,">library(shiny)
+ui &lt;- fluidPage(
+   
+   # Application title
+   titlePanel(&quot;Old Faithful Geyser Data&quot;),
+   
+   # Sidebar with a slider input for number of bins 
+   sidebarLayout(
+      sidebarPanel(
+         sliderInput(&quot;bins&quot;,
+                     &quot;Number of bins:&quot;,
+                     min = 1,
+                     max = 50,
+                     value = 30)
+      ),
+      
+      # Show a plot of the generated distribution
+      mainPanel(
+         plotOutput(&quot;distPlot&quot;)
+      )
+   )
+)
 
 # Define server logic required to draw a histogram
-shinyServer(function(input, output) {
+server &lt;- function(input, output) {
    
-  output$distPlot &lt;- renderPlot({
-    
-    # generate bins based on input$bins from ui.R
-    x    &lt;- faithful[, 2] 
-    bins &lt;- seq(min(x), max(x), length.out = input$bins + 1)
-    
-    # draw the histogram with the specified number of bins
-    hist(x, breaks = bins, col = 'darkgray', border = 'white')
-    
-  })
-  
-})
+   output$distPlot &lt;- renderPlot({
+      # generate bins based on input$bins from ui.R
+      x    &lt;- faithful[, 2] 
+      bins &lt;- seq(min(x), max(x), length.out = input$bins + 1)
+      
+      # draw the histogram with the specified number of bins
+      hist(x, breaks = bins, col = 'darkgray', border = 'white')
+   })
+}
+
+# Run the application 
+shinyApp(ui = ui, server = server)
 </code></pre>
 
 <blockquote>
