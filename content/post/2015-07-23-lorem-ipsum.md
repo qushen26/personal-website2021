@@ -9,7 +9,7 @@ tags:
 
 **interactive visualization** . 
 _UI_ This is a Shiny web application.
-```{r, echo=T}
+```{r, echo=TRUE}
 
 library(shiny)
 
